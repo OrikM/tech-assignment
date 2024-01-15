@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WebFader Technical Assignment</title>
+    <meta name="author" content="Orkhan Mehraliyev" />
+    <meta name="description" content="Technical Assignment for WebFader consisting of HTML, CSS (Bootstrap5), JavaScript"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="d-flex flex-column justify-content-evenly align-content-center">
+    <!-- Header -->
+    <header class="m-4 mb-5">
+      <div class="amex_logo">
+        <img
+          src="./images/amex-logo-bluesquare.png"
+          alt="american express logo blue"
+        />
+      </div>
+    </header>
+    <!-- ==================================================== -->
+    <!-- main part with amex card and form -->
+    <main
+      class="m-auto d-flex flex-column justify-content-between align-items-center col-md-8 px-sm-2 my-5"
+    >
+      <!-- Amex card part -->
+      <div id="amex_card" class="d-flex flex-sm-column flex-md-row justify-content-between w-100">
+        <div></div>
+        <div class="amex_card_img">
+          <img
+            class="w-100"
+            alt="american express card"
+            src="./images/green-card.png"
+          />
+        </div>
+      </div>
+      <div
+        id="second_row"
+        class="d-flex flex-sm-column flex-md-row justify-content-between w-100 text-white align-items-center"
+      >
+        <p>Vaihe 1/3</p>
+        <p class="fw-semibold">Lorem, ipsum.</p>
+      </div>
+      <div
+        id="third_row"
+        class="d-flex flex-sm-column flex-md-row justify-content-between text-white w-100 align-items-center"
+      >
+        <h1>Lorem.</h1>
+        <ul class="list-unstyled d-flex flex-column align-items-end">
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Lorem ipsum dolor sit.</li>
+        </ul>
+      </div>
+      <!-- ==================================================== -->
+      <!-- Form  -->
+      <form
+        name="feedbackForm"
+        class="d-flex flex-row bg-white w-100 justify-content-evenly align-content-center align-items-start rounded-2 py-4 row px-3"
+      >
+        <div class="code in-group col-md-3 px-1 my-1">
+          <select
+            name="code"
+            class="form-select floating"
+            id="code"
+            aria-label="Floating label select example"
+          ></select>
+          <label for="code">Code</label>
+        </div>
+        <div class="email in-group col-md-3 px-1 my-1">
+          <input
+            name="email"
+            type="email"
+            class="form-control"
+            id="email"
+            required
+          />
+          <label for="email">Email address</label>
+          <div class="invalid-feedback">Wrong Email format</div>
+        </div>
+        <div class="phone in-group col-md-4 px-1 my-1">
+          <input name="phone" type="number" class="form-control" id="phone" />
+          <label for="phone">Phone</label>
+        </div>
+        <div class="col-md-2 mt-1">
+          <button type="button" class="btn btn-primary w-100">Send</button>
+        </div>
+      </form>
+      <!-- ==================================================== -->
+      <div
+        id="final_row"
+        class="d-flex text-white w-75 align-self-end my-3 fw-light"
+      >
+        <p class="text-end w-100">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          sequi
+        </p>
+      </div>
+    </main>
+    <!-- ==================================================== -->
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+      <div class="d-flex flex-sm-column flex-md-row col-md-8 col-sm-10 m-auto mt-5">
+        <section class="footer_img col-md-3 col-sm-8">
+          <img
+            class="w-100"
+            src="./images/amex-logo-whiteletters.png"
+            alt="amex logo with white letters"
+          />
+        </section>
+        <section class="col-md-9">
+          <ul
+            id="footer_list"
+            class="d-flex flex-row flex-wrap justify-content-between text-white list-unstyled fw-bold fs-5 w-100 pe-5"
+          >
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor sit amet.</a></li>
+          </ul>
+          <hr class="w-100" />
+          <p class="fw-light text-light mb-5 p-0">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum
+            numquam porro quod! Facere,
+          </p>
+        </section>
+      </div>
+    </footer>
+    <!-- ==================================================== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./images/basic-cardbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Header */
+.amex_logo img {
+  width: 4.5vw;
+}
+
+/* Main */
+    #amex_card {
+        display: flex;
+        flex-direction: column;
+    }
+    .amex_card_img {
+        width: 15vw;
+        min-width: 50px;
+    }
+
+    #second_row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #second_row p:nth-child(1) {
+        font-size: 1.6rem;
+    }
+    #second_row p:nth-child(2) {
+        font-size: 1.9rem;
+    }
+
+    #third_row {
+        display: flex;
+        flex-direction: column;
+    }
+    #third_row h1 {
+        font-size: 6rem;
+    }
+    #third_row ul {
+        font-size: 1.2rem;
+    }
+
+    /* Form */
+        input,
+        select,
+        button {
+            height: 60px;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* floating on border inputs */
+        .in-group {
+            position: relative;
+            margin: 0;
+        }
+
+        .in-group label {
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: gray;
+            padding: 0;
+            margin-left: 5px;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+
+        .floating ~ label {
+            top: 0;
+            font-size: 12px;
+            background: white;
+        }
+
+        .in-group input {
+            font-size: 16px;
+            color: black;
+            padding: 0 10px;
+            background: transparent;
+            border: 1.2px solid lightgray;
+            outline: none;
+        }
+
+        /* placing label when email is not valid */
+            .not-valid .in-group label[for="email"] {
+                position: absolute;
+                top: 35%;
+            }
+            
+            .not-valid .floating ~ label[for="email"] {
+                top: -2%;
+            }
+        /* ------------------------ */
+    /* ----------------------------------------------------- */
+    #final_row p {
+        font-size: 1.1rem;
+    }
+/* ----------------------------------------------------------------------------- */
+
+    
+/* Footer */
+    /* for extra small(xs) screens where max-width is is 576px */
+        footer div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 75vw;
+        }
+    /* ------------------------ */
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        footer {
+            margin-top: 150px;
+            width: 100vw;
+        }
+
+        .footer_img img {
+            max-width: 250px;
+            min-width: 150px;
+            margin-bottom: 5vh;
+        }
+    /* ------------------------ */
+/* ------------------------------------------------------------ */
